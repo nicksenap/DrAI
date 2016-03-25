@@ -1,0 +1,52 @@
+
+
+#query {
+	margin: 10px;
+	font-size: 20px;
+	font-family: Arial;
+	font-style: bold;
+	font-weight: bold;
+}
+
+#container {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	width: 800px;
+	height: 80px;
+	margin-left: -350px;
+
+}
+
+#inputbox {
+	height: 30px;
+	width: 600px;
+	font-size: 20px;
+	text-align: center;
+}
+
+#livesearchitem {
+	color: black;
+	background-color: #ffffff;
+	padding-top: 5px;
+	padding-bottom: 5px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    font-family: Georgia;
+    margin-left: -38px;
+    border-bottom: 1px solid grey;
+    text-indent: 5px;
+
+}
+
+#livesearchlist {
+	margin-top: 0px;
+	width: 562px;
+}
+
+#livesearchitem:hover {background-color: #f1f1f1}
+
+#submitbutton {
+	font-size: 150%;
+}

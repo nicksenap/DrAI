@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <title>Prototyp</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script> 
+  <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/styling.css">
+  
+  <ul class="topnav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+       <li class="icon">
+           <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+           </li></ul>
+           <link rel="stylesheet" type="text/css" href="css/bar.css">
+           <script src="js/app.js"></script>
+</head>
+  
+  <body ng-app="doctorPrototype" ng-controller='MainCtrl'>
+	   <div id="text">
+      Welcome to DR.AI
+
+     </div>
+     
+     <div id="container">
+         <div ui-view></div>
+	   </div>
+  </body>
+</html>
+

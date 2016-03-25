@@ -1,0 +1,99 @@
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #111;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+body {
+  background-color: #00ccff;
+  font-family: Georgia;
+}
+
+#text {
+  border-color: #000000;
+  border-style: solid;
+  background-color: #ffffff;
+  margin-left: 400px;
+  margin-right: 400px;
+  text-align: center;
+  margin-top: 75px;
+  font-size: 200%;
+}
+
+#faq {
+  margin-left: 400px;
+  margin-right: 400px;
+  text-align: center;
+  margin-top: 75px;
+  font-size: 200%;
+}
+
+legend {
+  margin-bottom: 40px;
+}
+#temp {
+  font-size: 50%;
+}
+
+textarea {
+  position: absolute;
+  top: 270px;
+  resize: none;
+}
+
+#bat {
+  position: absolute;
+  top: 425px;
+  right: 365px;
+  font-size: 15px;
+}

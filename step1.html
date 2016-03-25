@@ -1,0 +1,14 @@
+
+
+<form ng-submit="submit()" autocomplete="off">
+			<input type="text" id="inputbox" ng-model="userInput" name="userInput" placeholder= "What's bothering you?"></input>
+			<input type="submit" id="submitbutton" value= "Send"></input>
+</form>
+<ul id="livesearchlist">
+    <li ng-click="searchClick(this)" id="livesearchitem" ng-repeat="i in initialSymptoms | searchFor:userInput | orderBy:i | limitTo: 20">
+        	{{ i }}
+    </li>
+</ul>
+<li ng-repeat="s in symptoms" ng-click="remove(this)">
+	{{s}}
+ </li>
